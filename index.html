@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bookmark</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cedarville+Cursive&family=Pacifico&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cedarville+Cursive&family=Pacifico&family=Righteous&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=PT+Sans+Caption:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="img/bookmark.png" type="image/x-icon">
+    <link rel="stylesheet" href="CSS/all.min.css">
+    <link rel="stylesheet" href="CSS/bootstrap.min.css">
+    <link rel="stylesheet" href="CSS/Style.css">
+</head>
+<body>
+    
+<div class="home  py-5 position-relative">
+  
+    <div class="test d-flex justify-content-center align-items-center">
+        <h1 class="text-center pt-1 position-relative">Bookmarker</h1>
+    </div>
+
+<div class="container">
+
+   <div class="line border mt-5"></div>
+
+    <div class="home2 pt-4 text-center">
+        <h2><i id="icon1" class="fa-solid fa-bookmark"></i> Bookmark your favorite sites <i id="icon2" class="fa-solid fa-bookmark"></i></h2>  
+    </div>
+
+    <div class="mb-3 ps-4 pt-4">
+        <label for="siteName" id="siteName" class="form-label"><i class="fa-solid fa-book-bookmark pe-2"></i> Site Name</label>
+        <input type="text" class="form-control" id="sitename" placeholder="Bookmark Name" oninput="validateName()">
+      </div>
+
+      <div class="mb-3 ps-4 pt-2">
+        <label for="siteurl" id="siteUrl" class="form-label"><i class="fa-solid fa-link pe-2"></i> Site URL</label>
+        <input type="text" class="form-control" id="siteurl" placeholder="Website URL" oninput=" validateUrl()">
+      </div>
+
+    <div class="button text-center pt-3">
+        <button class="btn btn-submit px-5" id="submitBtn" onclick="addSites()">Submit</button>
+    </div>
+    
+      <div class="line border mt-4 mb-3"></div>
+      
+
+      <table class="table bg-light">
+        <thead>
+          <tr>
+            <th class="ps-5" scope="col">Index</th>
+            <th scope="col">Website Name</th>
+            <th scope="col">Visit</th>
+            <th scope="col">Delete</th>
+          </tr>
+        </thead>
+        <tbody id="tableBody">
+         
+         
+        </tbody>
+
+      </table>
+
+    </div>
+    </div>
+
+
+    <script src="JS/all.min.js"></script>
+    <script src="JS/bootstrap.bundle.min.js"></script>
+    <script src="JS/index.js"></script>
+</body>
+</html>
